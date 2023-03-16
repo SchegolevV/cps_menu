@@ -89,14 +89,18 @@ body {
     margin-left: 24px;
     left: 20px;
 }
-.side-menu_nav-item::before {
+.nav-item_link::before {
     content:'';
     position: absolute;
-    left: 0;
+    left: -5px;
     height: 1.25em;
     border: 3px solid #41F6D7;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+.nav-item_link:hover::before, .nav-item_link:focus::before {
+    left: 0;
+    transition: 0.3s;
 }
 .nav-item_link {
     text-decoration: none;
