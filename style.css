@@ -29,11 +29,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 320px;
-    height: 100vh;
-    position: absolute;
+    height:100%;
+    position: fixed;
+    overflow: auto;
     left: 0;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    box-shadow:16px 0px 52px rgba(14, 24, 80, 0.2);
     background-color: #ffffff;
+}
+.side-menu::-webkit-scrollbar {
+    display: none;
 }
 .logo {
     width: 100px;
@@ -45,9 +49,13 @@ body {
     height: 44px;
     padding: 0;
     border: 0;
-    background-color: inherit;
+    border-radius: 50%;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.button:hover {
+    transition: 0.2s;
+    opacity: 0.8;
 }
 .button__image {
     width: 100%;
@@ -55,12 +63,6 @@ body {
 .border {
     border: 1px solid black;
 }
-.button__image:hover {
-    transition: 0.2s;
-    opacity: 0.8;
-}
-
-
 /* side-header */
 .side-header {
     display: flex;
@@ -77,6 +79,12 @@ body {
 .side-menu_button:last-child {
     margin-left: auto;
     margin-right: 16px;
+}
+#closer {
+    background:#FF3E79 url(icons/closer.svg) no-repeat center center;
+}
+#searching {
+    background:#FF3E79 url(icons/search.svg) no-repeat center center;
 }
 /* nav-list */
 
@@ -121,6 +129,15 @@ body {
 .buttons-action_button {
     margin-left: 16px;
 }
+#call {
+    background:#FF3E79 url(icons/call.svg) no-repeat center center;
+}
+#chat {
+    background:#FF3E79 url(icons/chat.svg) no-repeat center center;
+}
+#profile {
+    background:#FF3E79 url(icons/profile.svg) no-repeat center center;
+}
   /* phone & mail */
 .phone-and-mail {
     font-size: 24px;
@@ -143,7 +160,7 @@ body {
 /* lang-switch */
 .lang-switch {
     margin-bottom: 32px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .lang-btn {
     border: none;
@@ -154,9 +171,12 @@ body {
     font-family: 'TT Lakes';
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.lang-btn:hover, .lang-btn:focus {
+.lang-btn:hover {
     color: #7E7E82;
     transition: 0.2s;
 }
-
+input {
+    position: absolute;
+    opacity: 0;
+}
 

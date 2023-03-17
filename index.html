@@ -10,15 +10,11 @@
 <body>
     <div class="side-menu">
         <div class="side-header">
-            <button class="button side-menu_button" id="closer">
-                <img src="icons/burger-close.svg" alt="закрыть меню" class="button__image">
-            </button>
+            <button class="button side-menu_button" id="closer"></button>
             <div class="logo side-menu_logo">
                 <img src="icons/cps-logo.svg" alt="CPS логотип" class="logo__image">
             </div>
-            <button class="button side-menu_button" id="searching">
-                <img src="icons/search.svg" alt="поиск" class="button__image">
-            </button>
+            <button class="button side-menu_button" id="searching"></button>
         </div>
         <nav class="navigation-list">
 
@@ -49,22 +45,26 @@
             
         </nav>
         <div class="buttons-action">
-            <button class="button buttons-action_button">
-                <img src="icons/call.svg" alt="заказать звонок" class="button__image">
-            </button>
-            <button class="button buttons-action_button">
-                <img src="icons/chat.svg" alt="открыть чат с менеджером" class="button__image">
-            </button>
-            <button class="button buttons-action_button">
-                <img src="icons/profile.svg" alt="открыть ваш профиль" class="button__image">
-            </button>
+            <button class="button buttons-action_button" id="call"></button>
+            <button class="button buttons-action_button" id="chat"></button>
+            <button class="button buttons-action_button" id="profile"></button>
         </div>
         <a href="tel:88008908900" class="phone-and-mail" data-mail="mail@cps.com">8 800 890 8900</a>
-        <div class="lang-switch">
-            <button class="lang-btn">ru</button>
-            <button class="lang-btn">en</button>
-            <button class="lang-btn">ch</button>
-        </div>
+        
+        <form class="lang-switch" method="post">
+            <label class="lang-btn">
+                ru
+                <input type="radio" name="lang" value="russian">
+            </label>
+            <label class="lang-btn">
+                en
+                <input type="radio" name="lang" value="english">
+            </label>
+            <label class="lang-btn">
+                ch
+                <input type="radio" name="lang" value="chezh">
+            </label>
+        </form>
 
     </div>
 </body>
