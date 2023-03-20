@@ -80,10 +80,10 @@ body {
     margin-left: auto;
     margin-right: 16px;
 }
-#closer {
+.button--closer {
     background:#FF3E79 url(icons/closer.svg) no-repeat center center;
 }
-#searching {
+.button--searching {
     background:#FF3E79 url(icons/search.svg) no-repeat center center;
 }
 /* nav-list */
@@ -129,13 +129,13 @@ body {
 .buttons-action_button {
     margin-left: 16px;
 }
-#call {
+.button--call {
     background:#FF3E79 url(icons/call.svg) no-repeat center center;
 }
-#chat {
+.button--chat {
     background:#FF3E79 url(icons/chat.svg) no-repeat center center;
 }
-#profile {
+.button--profile {
     background:#FF3E79 url(icons/profile.svg) no-repeat center center;
 }
   /* phone & mail */
